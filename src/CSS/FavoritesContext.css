@@ -1,0 +1,102 @@
+.restaurant-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card__link {
+    display: block;
+    color: inherit;
+}
+
+.restaurant-card__image {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.restaurant-card__content {
+    padding: 0.9rem;
+}
+
+.restaurant-card__title-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.65rem;
+}
+
+.restaurant-card__name {
+    color: #1c1c1c;
+    font-size: 1rem;
+    line-height: 1.35;
+}
+
+.restaurant-card__rating {
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #267e3e;
+    color: #fff;
+    padding: 0.18rem 0.38rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.restaurant-card__cuisine,
+.restaurant-card__time {
+    overflow: hidden;
+    color: #696969;
+    font-size: 0.84rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.restaurant-card__cuisine {
+    margin-top: 0.45rem;
+}
+
+.restaurant-card__time {
+    margin-top: 0.22rem;
+}
+
+.restaurant-card__favorite {
+    position: absolute;
+    z-index: 2;
+    top: 0.7rem;
+    right: 0.7rem;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #e23744;
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.restaurant-card__favorite:hover {
+    transform: scale(1.08);
+}
+
+.restaurant-card__favorite--active {
+    background: #e23744;
+    color: #fff;
+}
+
+.restaurant-card__favorite:focus-visible {
+    outline: 3px solid rgba(226, 55, 68, 0.35);
+    outline-offset: 2px;
+}
