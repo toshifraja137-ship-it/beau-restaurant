@@ -77,8 +77,6 @@ beau/
 └── README.md
 ```
 
-*The folder structure above is illustrative; adjust it to match the actual project.*
-
 ## 🎯 Project Goal
 
 BEAU was created as a frontend web development project to practise React component-based development, UI design, styling, and building a consistent restaurant website experience.
